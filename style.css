@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --corDeFundo: #292525;
+    --corDaFaixa: #1F1D1D;
+    --corDoTitulo: #E26F74;
+    --cinzaSecundario: #453C3C;
+    --brancoSite: #ffffff;
+
+
+}
+
+body {
+    background: var(--corDeFundo);
+
+}
+
+/* MENU DE NAVEGAÇÃO PRINCIPAL*/
+
+.container-nav {
+    background-color: var(--corDaFaixa);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.container-nav img {
+    height: 50px;
+}
+
+.container-nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.link-nav {
+    list-style: none;
+
+}
+
+.link-nav a {
+    color: var(--brancoSite);
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.link-nav a:hover {
+    color: var(--corDoTitulo);
+}
+
+/* PRIMEIRA FAIXA*/
+
+.primeira-faixa img {
+    height: 270px;
+    margin-bottom: 50px;
+
+}
+
+.primeira-faixa {
+    margin-top: 150px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo-primeira-faixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituto-primeira-faixa {
+    color: var(--corDoTitulo);
+    font-size: 64px;
+}
+
+.descricao-primeira-faixa {
+    color: var(--brancoSite);
+    font-size: 48px;
+}
+
+/* SEGUNDA FAIXA*/
+
+.segunda-faixa {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    padding: 70px;
+    background-color: var(--corDaFaixa);
+}
+
+.imagem-segunda-faixa img {
+    height: 300px;
+
+}
+
+.grupo-conteudo-segunda-faixa{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagem-segunda-faixa {
+    width: 50%;
+    text-align: center;
+}
+
+.conteudo-segunda-faixa {
+    width: 50%;   
+    
+}
+
+.conteudo-segunda-faixa h3 {
+    font-size: 48px;
+    color: var(--brancoSite);
+}
+
+.conteudo-segunda-faixa h3:hover {
+    color: var(--cinzaSecundario);
+}
+
+.conteudo-segunda-faixa p {
+    font-size: 20px;
+    color: var(--corDoTitulo);
+}
+
+
+
+/* TERCEIRA FAIXA*/
+
+
+.terceira-faixa {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 200px 0;
+
+}
+
+.conteudo-terceira-faixa {
+    
+    margin-right: 250px;
+}
+
+.conteudo-terceira-faixa h3 {
+    color: var(--corDoTitulo);
+    font-size: 48px;
+}
+
+.conteudo-terceira-faixa h3:hover {
+    color: var(--cinzaSecundario);
+}
+
+.conteudo-terceira-faixa p {
+    color: var(--brancoSite);
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.imagem-terceira-faixa img {
+    height: 300px;
+
+
+}
+
+.quarta-faixa {
+    background-color: var(--corDaFaixa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.titulo-quarta-faixa {
+    color: var(--corDoTitulo);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.descricao-quarta-faixa {
+    color: var(--brancoSite);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.botao-quarta-faixa {
+    width: 250px;
+    height: 68px;
+    background-color: var(--corDoTitulo);
+    font-size: 40px;
+    color: var(--brancoSite);
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.botao-quarta-faixa:hover {
+    background-color: var(--cinzaSecundario);
+    color: var(--corDoTitulo);
+}
+
+.botao-quarta-faixa:active {
+    background-color: var(--corDoTitulo);
+    color: var(--corDaFaixa);
+}
+
+iframe {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 60%;
+    height: 500px;
+}
+
+.titulo-final {
+    color: var(--cinzaSecundario);
+    font-size: 48px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.titulo-final:hover {
+    color: var(--corDoTitulo);
+}
+
+.rodape {
+    background-color: var(--corDaFaixa);
+    color: var(--cinzaSecundario);
+    text-align: center;
+    padding: 40px;
+    font-weight: 200;
+}
+
+footer p:hover {
+    color: var(--corDoTitulo);
+}
+
+/*INICI DA VERSÃO MOBILE*/
+
+@media screen and (max-width:780px) {
+    
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        
+    }
+
+    .container-nav img {
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container-nav-links {
+        text-align: center;
+    }
+
+    .container-nav-links a {
+        margin-left: 35px;
+        text-align: center;
+    }
+
+    .tituto-primeira-faixa {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .descricao-primeira-faixa {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .segunda-faixa {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .conteudo-segunda-faixa {
+        width: auto;
+        padding: 0 80px;
+        margin: 100px 0;
+        
+    }
+    .imagem-segunda-faixa {
+       width: auto; 
+       display: block;
+    }
+    .imagem-segunda-faixa img {
+        padding: 0 ;
+        margin: 0 0 100px 0;
+        height: 270px;
+        width: auto;
+    }
+
+    .grupo-conteudo-segunda-faixa{
+        text-align: center;
+        
+    }
+
+
+    .conteudo-segunda-faixa h3 {
+        font-size: 30px;
+        width: 480px;
+        margin: 10px 0;
+        
+    }
+
+
+    .descricao-quarta-faixa{
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    iframe{
+        width: 70%;
+        height: 270px;
+    }
+
+    .terceira-faixa{
+        flex-direction: column;
+        justify-content:center;
+        padding: 0;
+        margin: 0;
+    }
+    .conteudo-terceira-faixa h3{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .conteudo-terceira-faixa p {
+        font-size: 17px;
+        
+    }
+    .conteudo-terceira-faixa{
+        margin: 0;
+        padding: 0 20px;
+        
+    }
+
+    .imagem-terceira-faixa{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .quarta-faixa{
+        margin: 0;
+    }
+
+
+
+}
